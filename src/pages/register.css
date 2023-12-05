@@ -1,0 +1,12 @@
+#email,
+#password {
+  position: relative;
+}
+
+#email ion-icon,
+#password ion-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem; /* Ajuste conforme necessário */
+}
