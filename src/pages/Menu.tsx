@@ -1,4 +1,7 @@
 import {
+  IonBackButton,
+  IonButton,
+  IonButtons,
   IonContent,
   IonHeader,
   IonIcon,
@@ -15,13 +18,15 @@ import React from "react";
 import List from "./List";
 import Settings from "./Settings";
 import { Redirect, Route } from "react-router";
-import { homeOutline, settingsOutline } from "ionicons/icons";
+import { homeOutline, logOutOutline, settingsOutline } from "ionicons/icons";
 import "./menu.css";
+import Login from "./Login";
 
 const Menu: React.FC = () => {
   const paths = [
     { name: "Home", url: "/app/list", icon: homeOutline },
     { name: "Settings", url: "/app/settings", icon: settingsOutline },
+    { name: "Logout", url: "/", icon: logOutOutline },
   ];
   return (
     <IonPage>
@@ -50,6 +55,7 @@ const Menu: React.FC = () => {
         <IonRouterOutlet id='main'>
           <Route exact path='/app/list' component={List} />
           <Route exact path='/app/settings' component={Settings} />
+          <Route exact path='/' component={Login} />
           <Route exact path='/app'>
             <Redirect to='/app/list' />
           </Route>

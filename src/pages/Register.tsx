@@ -1,23 +1,19 @@
 import {
-  IonBackButton,
   IonButton,
-  IonButtons,
   IonCol,
   IonContent,
   IonGrid,
-  IonHeader,
   IonIcon,
   IonInput,
   IonPage,
   IonRow,
-  IonTitle,
-  IonToolbar,
   useIonRouter,
 } from "@ionic/react";
 import {
-  checkmarkDoneOutline,
+  backspaceOutline,
   lockClosedOutline,
   mailOpenOutline,
+  personCircleOutline,
 } from "ionicons/icons";
 import React from "react";
 import register from "../assets/register.png";
@@ -76,7 +72,16 @@ const Register: React.FC = () => {
                   expand='block'
                   className='ion-margin-top'>
                   Criar Conta
-                  <IonIcon icon={checkmarkDoneOutline} slot='end'></IonIcon>
+                  <IonIcon icon={personCircleOutline} slot='end'></IonIcon>
+                </IonButton>
+                <IonButton
+                  onClick={handleRegister}
+                  type='button'
+                  color={"secondary"}
+                  expand='block'
+                  className='ion-margin-top'>
+                  Voltar
+                  <IonIcon icon={backspaceOutline} slot='end' />
                 </IonButton>
               </form>
             </IonCol>

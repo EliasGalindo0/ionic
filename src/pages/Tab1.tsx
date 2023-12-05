@@ -20,7 +20,7 @@ const Tab1: React.FC = () => {
           <IonTitle>Tab 1</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent className='ion-padding'>UI goes here...</IonContent>
+      <IonContent className='ion-padding'>Tab 1</IonContent>
     </IonPage>
   );
 };

@@ -22,7 +22,7 @@ const Tab2: React.FC = () => {
           </IonToolbar>
         </IonToolbar>
       </IonHeader>
-      <IonContent className='ion-padding'>UI goes here...</IonContent>
+      <IonContent className='ion-padding'>Tab 2</IonContent>
     </IonPage>
   );
 };
